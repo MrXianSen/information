@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <!-- top bar -->
+
+    <RelativeLayout
+            android:id="@+id/main_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#EEE8AA">
+
+        <!-- “个人”按钮 -->
+
+        <ImageButton
+                android:id="@+id/main_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:background="#00000000"
+                android:src="@drawable/left_fragment_mine_icon_normal"/>
+
+        <!-- “主页”文本 -->
+
+        <TextView
+                android:id="@+id/main_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="主页"/>
+
+        <!-- “搜索”按钮 -->
+
+        <Button
+                android:id="@+id/main_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="搜索"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/main_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_top_bar">
+
+        <com.albery.view.MyListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:cacheColorHint="#00000000"
+                android:dividerHeight="5dip"/>
+    </LinearLayout>
+
+    <!-- bottom bar -->
+
+    <LinearLayout
+            android:id="@+id/main_bottom_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFEFD5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <!-- “主页”按钮 -->
+
+        <ImageButton
+                android:id="@+id/main_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/left_fragment_home_icon_normal"/>
+
+        <!-- “消息”按钮 -->
+
+        <ImageButton
+                android:id="@+id/main_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/left_fragment_release_icon_normal"/>
+
+        <!-- “发布”按钮 -->
+
+        <ImageButton
+                android:id="@+id/main_send"
+                android:layout_width="5dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/send_icon"/>
+
+        <!-- “频道”按钮 -->
+
+        <ImageButton
+                android:id="@+id/main_pindao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/left_fragment_near_icon_normal"/>
+
+        <!-- “设置”按钮 -->
+
+        <ImageButton
+                android:id="@+id/main_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/left_fragment_settings_icon_normal"/>
+    </LinearLayout>
+
+</RelativeLayout>

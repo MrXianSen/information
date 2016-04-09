@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="page1_checbox_text" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">#555555</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+              android:paddingTop="30dp">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        <RadioGroup
+                android:id="@+id/head_choose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <RadioButton
+                    android:id="@+id/head0001"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+            <RadioButton
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/head0002"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+            <RadioButton
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/head0003"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+            <RadioButton
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/head0004"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+            <RadioButton
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/head0005"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+            <RadioButton
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/head0006"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/head01"/>
+
+        <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/head02"/>
+
+        <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/head03"/>
+
+        <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/head04"/>
+
+        <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/head05"/>
+
+        <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/head06"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">风信</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="page1_title">TED</string>
+    <string name="page1_title_1">信息发布平台</string>
+    <!-- 使用全角空格 -->
+    <string name="page1_login_userText">用户名:</string>
+    <string name="page1_login_userText_hint">请输入用户名</string>
+    <string name="page1_login_right_image">＞</string>
+    <string name="page1_login_passwdText">密 码:</string>
+    <string name="page1_network_button">登 录</string>
+    <string name="page1_login_button">网络设置</string>
+    <string name="page1_login_button1">取 消</string>
+    <string name="page1_checbox_text1">记住我的密码</string>
+    <string name="page1_checbox_text2">自动登录</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
+</resources>

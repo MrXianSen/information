@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/page1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+    <!-- 登录界面的布局 -->
+
+    <!-- 在布局最顶端布置一个商标标识 -->
+
+    <!-- 程序名称 -->
+
+    <!-- 一个登录界面的图片 -->
+
+    <ImageView
+            android:id="@+id/page1_image"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="2dp"
+            android:src="@drawable/login_image"/>
+
+    <!-- 设置一个RelativeLayout来布局用户名输入框与密码输入框 -->
+    <RelativeLayout
+            android:id="@+id/page1_login"
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/page1_image"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <!-- 用户名输入框 -->
+        <EditText
+                android:id="@+id/page1_login_user_edit"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingLeft="80dp"
+                android:paddingBottom="17dp"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:background="@drawable/page1_login_input"
+                style="@style/page1_text"
+                android:hint="@string/page1_login_userText_hint"/>
+        <!-- 用户名输入框的输入用户名文本 -->
+        <TextView
+                android:id="@+id/page1_login_user_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingLeft="20dp"
+                style="@style/page1_text"
+                android:text="@string/page1_login_userText"/>
+        <!-- 密码输入框 -->
+        <EditText
+                android:id="@+id/page1_login_passwd_edit"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingTop="16dp"
+                android:paddingLeft="80dp"
+                android:paddingBottom="15dp"
+                android:layout_marginBottom="11dp"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:background="@drawable/page1_login_input"
+                style="@style/page1_text"
+                android:password="true"/>
+        <!-- 密码输入框里面的密码文本 -->
+        <TextView
+                android:id="@+id/page1_login_passwd_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/page1_login_user_text"
+                android:paddingTop="28dp"
+                android:paddingLeft="20dp"
+                style="@style/page1_text"
+                android:text="@string/page1_login_passwdText"/>
+    </RelativeLayout>
+
+    <!-- 这里运用TableLayout来设置“登录”按钮与“取消”按钮 -->
+    <TableLayout
+            android:id="@+id/page1_tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/page1_login"
+            android:gravity="center_horizontal">
+        <TableRow>
+
+            <!-- 登录按钮 -->
+            <Button
+                    style="@style/page1_text"
+                    android:id="@+id/login_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:text="@string/page1_network_button"/>
+
+            <!-- 取消按钮 -->
+            <Button
+                    android:id="@+id/login_cannel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginLeft="40dp"
+                    style="@style/page1_text"
+                    android:text="@string/page1_login_button1"/>
+        </TableRow>
+    </TableLayout>
+
+    <!-- 这里运用RelativeLayout来设置多选框内容 -->
+    <RelativeLayout
+            android:id="@+id/checkbox_relativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/page1_tableLayout"
+            >
+        <!-- “记住密码”的多选框 -->
+        <!-- “自动登录”的多选框 -->
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/enroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/guest"
+            android:layout_alignBottom="@+id/guest"
+            android:layout_alignLeft="@+id/page1_image"
+            android:text="注册"
+            android:textColor="#6699FF"
+            android:textStyle="italic"/>
+
+    <TextView
+            android:id="@+id/guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/page1_image"
+            android:layout_marginBottom="14dp"
+            android:text="游客登录"
+            android:textColor="#6699FF"
+            android:textStyle="italic"/>
+
+</RelativeLayout>

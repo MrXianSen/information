@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <!-- 消息界面布局 -->
+
+    <!-- top bar -->
+
+    <RelativeLayout
+            android:id="@+id/news_top_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:background="#EEE8AA">
+
+        <!-- “返回”按钮 -->
+        <Button
+                android:id="@+id/news_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"/>
+
+        <!-- “消息”文本 -->
+        <TextView
+                android:id="@+id/news_text_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="消息"/>
+    </RelativeLayout>
+
+    <!-- 消息列表 -->
+    <ListView
+            android:layout_below="@id/news_top_bar"
+            android:id="@+id/news_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    <!-- bottom bar -->
+
+    <LinearLayout
+            android:id="@+id/main_bottom_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFEFD5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <!-- “主页”按钮 -->
+
+        <ImageButton
+                android:id="@+id/news_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/left_fragment_home_icon_normal"/>
+
+        <!-- “消息”按钮 -->
+
+        <ImageButton
+                android:id="@+id/news_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/left_fragment_release_icon_normal"/>
+
+        <!-- “发布”按钮 -->
+
+        <ImageButton
+                android:id="@+id/news_send"
+                android:layout_width="5dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/send_icon"/>
+
+        <!-- “频道”按钮 -->
+
+        <ImageButton
+                android:id="@+id/news_pindao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/left_fragment_near_icon_normal"/>
+
+        <!-- “设置”按钮 -->
+
+        <ImageButton
+                android:id="@+id/news_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:src="@drawable/left_fragment_settings_icon_normal"/>
+    </LinearLayout>
+
+</RelativeLayout>

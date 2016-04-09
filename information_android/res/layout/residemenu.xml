@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- 定义一个ImageView做背景 -->
+
+        <ImageView
+                android:id="@+id/iv_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+
+        <!-- 定义一个ImageView做阴影效果 -->
+
+        <ImageView
+                android:id="@+id/iv_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/shadow"
+                android:scaleType="fitXY"
+                android:visibility="gone"/>
+
+        <!-- 滚动视图（只支持垂直滚动） -->
+        <!-- 定义一个左菜单的布局 -->
+
+        <ScrollView
+                android:id="@+id/sv_left_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:visibility="visible">
+
+            <!-- 给左菜单内嵌套一个线性布局 -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="70dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                <!-- 用户信息栏 -->
+                <RelativeLayout
+                        android:id="@+id/menu_user_bar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp">
+
+                    <!-- 用户头像 -->
+                    <ImageView
+                            android:id="@+id/menu_user_head"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/head00"/>
+
+                    <!-- 用户名字 -->
+                    <TextView
+                            android:id="@+id/name"
+                            android:layout_toRightOf="@id/menu_user_head"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="guest"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="25sp"/>
+
+                    <!-- 用户性别 -->
+                    <ImageView
+                            android:id="@+id/gender"
+                            android:layout_below="@id/name"
+                            android:layout_toRightOf="@id/menu_user_head"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/gender"/>
+                </RelativeLayout>
+
+
+                <!-- 子菜单栏 -->
+                <LinearLayout
+                        android:id="@+id/layout_left_menu1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical">
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+                android:id="@+id/exitLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_toRightOf="@id/exitLayout"
+                android:id="@+id/changeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="10dp">
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

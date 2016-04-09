@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.albery.information"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+            android:minSdkVersion="5"
+            android:targetSdkVersion="19"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name="com.albery.Activity.Welcome"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.albery.Activity.MainActivity"/>
+        <activity android:name="com.albery.Activity.InfoDetail"/>
+        <activity android:name="com.albery.Activity.Login"/>
+        <activity android:name="com.albery.Activity.Personal"/>
+        <activity android:name="com.albery.Activity.Enroll"/>
+        <activity android:name="com.albery.Activity.Edit"/>
+
+        <service
+                android:name="org.androidpn.client.NotificationService"
+                android:enabled="true"
+                android:label="NotificationService">
+            <intent-filter>
+                <action android:name="org.androidpn.client.NotificationService"/>
+            </intent-filter>
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+</manifest>
